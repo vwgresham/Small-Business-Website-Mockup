@@ -1,12 +1,20 @@
 /** General Information **/
 
+/* #9CD5E2 */
+
 @font-face {
 	font-family: MissionGothic;
 	src: url(ArtFiles/MissionGothicThin.otf);
 }
 
 @font-face {
-	font-family: AbrahamLincoln
+	font-family: MissionGothic;
+	src: url(ArtFiles/MissionGothicBlack.otf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: AbrahamLincoln;
 	src: url(ArtFiles/AbrahamLincoln.ttf);
 }
 
@@ -19,14 +27,71 @@ ul {
 	-webkit-padding-start: 0px;
 }
 
+body {
+	height: 100%;
+}
+
 /** Universal **/
 /* Brand Logo */
 .Largelogo img {
-	width: 20%;
-	margin: 20px 40% 5px 40%;
+	width: 16%;
+	margin: 20px 42% 20px 42%;
 	float: left;
-	position: absolute;
+	position: relative;
 	display: block;
+}
+
+.container {
+	min-height: 100%;
+	position: relative;
+}
+
+.content {
+	width: 80%;
+	margin: 0 10% 0 10%;
+}
+
+.subNav {
+	font-size: 20px;
+	font-family: MissionGothic;
+	display: block;
+	text-align: left;
+	width: 50%;
+	padding: 10px;
+}
+
+.subNav p {
+	font-size: 36px;
+	margin: 10px 0 10px 0;
+	font-weight: bold;
+	font-family: AbrahamLincoln
+}
+
+.subNav li {
+	display: inline-block;
+	padding: 1px 3px 1px 3px;
+}
+
+.subNav li a:link {
+	text-decoration: none;
+	color: black;
+}
+
+.subNav li a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.subNav li a:hover {
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.sectionTitle {
+	font-size: 30px;
+	font-family: AbrahamLincoln;
+	text-decoration: underline;
+	padding-bottom: 10px;
 }
 
 /* Main Navigation Format */
@@ -39,6 +104,7 @@ ul {
 	font-size: 26px;
 	font-family: AbrahamLincoln;
 	border-top: black 2px;
+	margin: 5px;
 }
 
 .mainNav li {
@@ -51,6 +117,11 @@ ul {
 	color: black;
 }
 
+.mainNav li a:visited {
+	text-decoration: none;
+	color: black;
+}
+
 .mainNav li a:hover {
 	text-decoration: underline;
 	font-style: italic;
@@ -59,7 +130,7 @@ ul {
 /* Technical Footer */
 
 .bottomFooter {
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	width: 100%;
 	height: 20px;
@@ -95,8 +166,371 @@ ul {
 /* Main Navigation Positioning */
 
 .homeNav {
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	width: 100%;
 	margin: 0 auto 0 auto;
 }
+
+/* Home Page Images */
+
+.imagesHome {
+	position: relative;
+	text-align: center;
+	width: 80%;
+	margin: 0 10% 0 10%;
+}
+
+.imagesHome img {
+	width: 48%;
+	padding: 1%;
+}
+
+/* About Page Layout */
+
+.aboutSub {
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+.content #about {
+	display: inline-block;
+	width: 100%;
+}
+
+.content #about p {
+	padding: 10px;
+	width: 45%;
+	margin: 0 0 0 10px;
+	font-family: MissionGothic;
+	z-index: 1;
+	font-size: 16px;
+	float: left;
+}
+
+.content #about img {
+	z-index: 10;
+	float: right;
+	width: 45%;
+	vertical-align: top;
+}
+
+.content #history {
+	padding: 10px;
+	width: 100%;
+	margin: 10px 10px 10px 10px;
+	font-family: MissionGothic;
+	z-index: 1;
+	font-size: 16px;
+}
+
+.content #meet {
+	display: inline-block;
+	width: 100%;
+}
+
+.content #meet p {
+	padding: 10px;
+	width: 65%;
+	margin: 0 0 0 10px;
+	font-family: MissionGothic;
+	z-index: 1;
+	font-size: 16px;
+	float: left;
+}
+
+#sectionTitle1 {
+	width: 100%;
+	font-size: 30px;
+	font-family: AbrahamLincoln;
+	text-decoration: underline;
+	padding-bottom: 10px;
+}
+
+.content #meet img {
+	float: right;
+	width: 25%;
+	padding: 5px;
+}
+
+.meetHeader {
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+/* Menu Page Layout */
+
+.menuSub {
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+.content #bread {
+	display: inline-block;
+	width: 100%;
+}
+
+.containerBread {
+	padding: 10px;
+	width: 60%;
+	margin: 0 0 0 10px;
+	font-family: MissionGothic;
+	z-index: 1;
+	font-size: 16px;
+	float: left;
+}
+
+.content ul {
+	list-style: none;
+}
+
+.content #bread img {
+	z-index: 10;
+	float: right;
+	width: 35%;
+	vertical-align: top;
+}
+
+.content #pastry {
+	display: inline-block;
+	width: 100%;
+}
+
+.containerPastry {
+	padding: 10px;
+	width: 60%;
+	margin: 0 0 0 10px;
+	font-family: MissionGothic;
+	z-index: 1;
+	font-size: 16px;
+	float: right;
+}
+
+.content #pastry img {
+	z-index: 10;
+	float: left;
+	width: 35%;
+	vertical-align: top;
+}
+
+.content #bagel {
+	display: inline-block;
+	width: 100%;
+}
+
+.containerBagel {
+	padding: 10px;
+	width: 60%;
+	margin: 0 0 0 10px;
+	font-family: MissionGothic;
+	z-index: 1;
+	font-size: 16px;
+	float: left;
+}
+
+.content #bagel img {
+	z-index: 10;
+	float: right;
+	width: 35%;
+	vertical-align: top;
+}
+
+
+/* Events Page Layout */
+
+.eventSub {
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+.content #service {
+	display: inline-block;
+	width: 100%;
+}
+
+.containerService {
+	padding: 10px;
+	width: 50%;
+	margin: 0 0 0 10px;
+	font-family: MissionGothic;
+	z-index: 1;
+	font-size: 16px;
+	float: left;
+}
+
+.content #service img {
+	z-index: 10;
+	float: right;
+	width: 45%;
+	vertical-align: top;
+}
+
+.content #price {
+	display: inline-block;
+	width: 100%;
+}
+
+.containerPrice {
+	padding: 10px;
+	width: 50%;
+	margin: 0 0 0 10px;
+	font-family: MissionGothic;
+	z-index: 1;
+	font-size: 16px;
+	float: right;
+}
+
+.content #price img {
+	z-index: 10;
+	float: left;
+	width: 45%;
+	vertical-align: top;
+}
+
+.content #testimonial {
+	display: inline-block;
+	width: 100%;
+}
+
+.containerTesti {
+	padding: 10px;
+	width: 50%;
+	margin: 0 0 0 10px;
+	font-family: MissionGothic;
+	z-index: 1;
+	font-size: 16px;
+	float: left;
+}
+
+.content #testimonial img {
+	z-index: 10;
+	float: right;
+	width: 45%;
+	vertical-align: top;
+}
+
+/* Visit Us Page Layout */
+
+.content #visit {
+	display: inline-block;
+	width: 100%;
+}
+
+.containerVisit {
+	padding: 10px;
+	width: 40%;
+	margin: 0 0 0 10px;
+	font-family: MissionGothic;
+	z-index: 1;
+	font-size: 16px;
+	float: left;
+}
+
+.content #visit iframe {
+	z-index: 10;
+	float: right;
+	width: 55%;
+	vertical-align: top;
+}
+
+/* Contact Us Page Layout */
+
+.content #contact {
+	display: inline-block;
+	width: 100%;
+}
+
+.containerContact {
+	padding: 10px;
+	width: 30%;
+	margin: 0 0 0 10px;
+	font-family: MissionGothic;
+	z-index: 1;
+	font-size: 16px;
+	float: left;
+}
+
+.containerContact a:link {
+	color: black;
+	text-decoration: none;
+}
+
+.containerContact a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.containerContact a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.containerContact img {
+	width: 50px;
+	vertical-align: middle;
+	padding: 0 10px 0 10px;
+	opacity: .4; 
+}
+
+.containerContact img:hover {
+	opacity: 1;
+}
+
+.contactExtra img {
+	z-index: 10;
+	float: right;
+	width: 30%;
+	vertical-align: top;
+}
+
+.containerContact textarea {
+	width: 94%;
+}
+
+.containerContact input {
+	width: 44%;
+	margin-right: 3%;
+}
+
+/* Site Map Layout */
+
+.containerMap1 {
+	font-family: MissionGothic;
+	font-size: 16px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	width: 48%;
+	float: left;
+}
+
+.containerMap2 {
+	font-family: MissionGothic;
+	font-size: 16px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	width: 48%;
+	float: right;
+}
+
+.containerMap1 a:link {
+	text-decoration: none;
+	color: black
+}
+
+.containerMap1 a:visited {
+	text-decoration: none;
+	color: black
+}
+
+.containerMap2 a:link {
+	text-decoration: none;
+	color: black
+}
+
+.containerMap2 a:visited {
+	text-decoration: none;
+	color: black
+}
+
+
+
