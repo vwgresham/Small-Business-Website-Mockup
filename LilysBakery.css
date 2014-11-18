@@ -39,6 +39,22 @@ body {
 	float: left;
 	position: relative;
 	display: block;
+	z-index: 60;
+}
+
+.home {
+	position: absolute;
+	float: left;
+	z-index: 60;
+}
+
+.home img {
+	width: 30px;
+	opacity: .4;
+}
+
+.home img:hover {
+	opacity: .4;
 }
 
 .container {
@@ -532,5 +548,24 @@ body {
 	color: black
 }
 
+/* Legal Page Laoyout */
 
+.containerLegal {
+	font-family: MissionGothic;
+	font-size: 16px;
+	padding: 10px;
+	width: 60%;
+	margin-left: 20%;
+}
 
+.containerLegal a:link {
+	color: black;
+}
+
+.containerLegal a:visited {
+	color: black;
+}
+
+.containerLegal a:hover {
+	font-style: italic;
+}
