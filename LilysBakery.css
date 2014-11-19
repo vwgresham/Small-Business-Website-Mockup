@@ -1,6 +1,12 @@
 /** General Information **/
 
-/* #9CD5E2 */
+/* Theme Colors:
+
+Logo Robin's Egg Blue: #9CD5E2 
+Pale Logo Blue Variation: #DCF2F7
+Pale Yello Accent: #FFF9B3
+
+*/
 
 @font-face {
 	font-family: MissionGothic;
@@ -29,6 +35,10 @@ ul {
 
 body {
 	height: 100%;
+}
+
+p {
+	margin: 0;
 }
 
 /** Universal **/
@@ -72,20 +82,25 @@ body {
 	font-family: MissionGothic;
 	display: block;
 	text-align: left;
-	width: 50%;
-	padding: 10px;
+	width: 97%;
+
+	margin-bottom: 10px;
 }
 
 .subNav p {
 	font-size: 36px;
 	margin: 10px 0 10px 0;
+	padding: 1.5%;	
 	font-weight: bold;
 	font-family: AbrahamLincoln
 }
 
 .subNav li {
 	display: inline-block;
-	padding: 1px 3px 1px 3px;
+	padding: 5px 10px 5px 10px;
+	margin: 0 0 0 10px;
+	background-color: #FFF9B3;
+
 }
 
 .subNav li a:link {
@@ -113,7 +128,7 @@ body {
 /* Main Navigation Format */
 
 .mainNav {
-	display: block;
+	display: inline-block;
 	width: 100%;
 	height: 50px;
 	text-align: center;
@@ -146,7 +161,7 @@ body {
 /* Technical Footer */
 
 .bottomFooter {
-	position: relative;
+	position: absolute;
 	bottom: 0;
 	width: 100%;
 	height: 20px;
@@ -159,7 +174,7 @@ body {
 
 .footerNav li {
 	display: inline-block;
-	padding: 10px 10px 10px 5px;
+	padding: 20px 10px 10px 5px;
 }
 
 .footerNav li img {
@@ -174,6 +189,11 @@ body {
 }
 
 .footerNav li a:link {
+	color: black;
+	text-decoration: none;
+}
+
+.footerNav li a:visited {
 	color: black;
 	text-decoration: none;
 }
@@ -206,7 +226,7 @@ body {
 
 .aboutSub {
 	margin: 5px 0 5px 0;
-	padding: 5px;
+	padding: 5px 5px 5px 0;
 }
 
 .content #about {
@@ -215,9 +235,8 @@ body {
 }
 
 .content #about p {
-	padding: 10px;
-	width: 45%;
-	margin: 0 0 0 10px;
+	padding: 1.5%;
+	width: 47%;
 	font-family: MissionGothic;
 	z-index: 1;
 	font-size: 16px;
@@ -227,14 +246,14 @@ body {
 .content #about img {
 	z-index: 10;
 	float: right;
-	width: 45%;
+	width: 50%;
 	vertical-align: top;
 }
 
 .content #history {
-	padding: 10px;
-	width: 100%;
-	margin: 10px 10px 10px 10px;
+	padding: 1.5%;
+	width: 97%;
+	margin: 10px 0 10px 0;
 	font-family: MissionGothic;
 	z-index: 1;
 	font-size: 16px;
@@ -246,9 +265,8 @@ body {
 }
 
 .content #meet p {
-	padding: 10px;
+	padding: 1.5%;
 	width: 65%;
-	margin: 0 0 0 10px;
 	font-family: MissionGothic;
 	z-index: 1;
 	font-size: 16px;
@@ -278,7 +296,7 @@ body {
 
 .menuSub {
 	margin: 5px 0 5px 0;
-	padding: 5px;
+	padding: 5px 5px 5px 0;
 }
 
 .content #bread {
@@ -287,9 +305,8 @@ body {
 }
 
 .containerBread {
-	padding: 10px;
-	width: 60%;
-	margin: 0 0 0 10px;
+	padding: 1.5%;
+	width: 62%;
 	font-family: MissionGothic;
 	z-index: 1;
 	font-size: 16px;
@@ -313,9 +330,8 @@ body {
 }
 
 .containerPastry {
-	padding: 10px;
-	width: 60%;
-	margin: 0 0 0 10px;
+	padding: 1.5%;
+	width: 60.5%;
 	font-family: MissionGothic;
 	z-index: 1;
 	font-size: 16px;
@@ -324,6 +340,7 @@ body {
 
 .content #pastry img {
 	z-index: 10;
+	margin-left: 1.5%;
 	float: left;
 	width: 35%;
 	vertical-align: top;
@@ -335,9 +352,8 @@ body {
 }
 
 .containerBagel {
-	padding: 10px;
-	width: 60%;
-	margin: 0 0 0 10px;
+	padding: 1.5%;
+	width: 62%;
 	font-family: MissionGothic;
 	z-index: 1;
 	font-size: 16px;
@@ -356,18 +372,19 @@ body {
 
 .eventSub {
 	margin: 5px 0 5px 0;
-	padding: 5px;
+	padding: 5px 5px 5px 0;
 }
 
 .content #service {
 	display: inline-block;
 	width: 100%;
+	background-color: #DCF2F7;
+	margin-bottom: 10px;
 }
 
 .containerService {
-	padding: 10px;
-	width: 50%;
-	margin: 0 0 0 10px;
+	padding: 1.5%;
+	width: 52%;
 	font-family: MissionGothic;
 	z-index: 1;
 	font-size: 16px;
@@ -384,12 +401,12 @@ body {
 .content #price {
 	display: inline-block;
 	width: 100%;
+	background-color: #FFF9B3;
 }
 
 .containerPrice {
-	padding: 10px;
-	width: 50%;
-	margin: 0 0 0 10px;
+	padding: 1.5%;
+	width: 52%;
 	font-family: MissionGothic;
 	z-index: 1;
 	font-size: 16px;
@@ -405,13 +422,14 @@ body {
 
 .content #testimonial {
 	display: inline-block;
+	margin-top: 10px;
 	width: 100%;
+	background-color: #DCF2F7;
 }
 
 .containerTesti {
-	padding: 10px;
-	width: 50%;
-	margin: 0 0 0 10px;
+	padding: 1.5%;
+	width: 52%;
 	font-family: MissionGothic;
 	z-index: 1;
 	font-size: 16px;
@@ -433,9 +451,8 @@ body {
 }
 
 .containerVisit {
-	padding: 10px;
-	width: 40%;
-	margin: 0 0 0 10px;
+	padding: 1.5%;
+	width: 42%;
 	font-family: MissionGothic;
 	z-index: 1;
 	font-size: 16px;
@@ -457,9 +474,8 @@ body {
 }
 
 .containerContact {
-	padding: 10px;
+	padding: 1.5%;
 	width: 30%;
-	margin: 0 0 0 10px;
 	font-family: MissionGothic;
 	z-index: 1;
 	font-size: 16px;
@@ -495,7 +511,7 @@ body {
 .contactExtra img {
 	z-index: 10;
 	float: right;
-	width: 30%;
+	width: 34%;
 	vertical-align: top;
 }
 
@@ -510,40 +526,22 @@ body {
 
 /* Site Map Layout */
 
-.containerMap1 {
+.containerMap {
 	font-family: MissionGothic;
 	font-size: 16px;
-	margin-left: 10px;
 	margin-bottom: 20px;
-	width: 48%;
+	margin-left: 1.5%;
+	width: 48.5%;
+	display: block;
 	float: left;
 }
 
-.containerMap2 {
-	font-family: MissionGothic;
-	font-size: 16px;
-	margin-left: 10px;
-	margin-bottom: 20px;
-	width: 48%;
-	float: right;
-}
-
-.containerMap1 a:link {
+.containerMap a:link {
 	text-decoration: none;
 	color: black
 }
 
-.containerMap1 a:visited {
-	text-decoration: none;
-	color: black
-}
-
-.containerMap2 a:link {
-	text-decoration: none;
-	color: black
-}
-
-.containerMap2 a:visited {
+.containerMap a:visited {
 	text-decoration: none;
 	color: black
 }
